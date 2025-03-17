@@ -1,0 +1,302 @@
+/* Define uma fonte padrão para todos od elementos */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    background-color: #252525; /* Cor de fundo do corpo */
+    color: #fff; /* Cor do texto */
+}
+
+/* Classes para diferentes cores de fundo */
+.primary-bg-color {
+    background-color: #252525;
+}
+.destaque {
+    background-color: #0d0d0d;
+}
+.secondary-bg-color {
+    background-color: #976df2;
+}
+.light-bg-color {
+    background-color: #fcf5eb;
+}
+.dark-bg-color {
+    background-color: #0d0d0d;
+}
+
+/* Classes para diferentes cores de texto */
+.primary-color {
+    color: #976df2;
+}
+.secondary-color {
+    color: #f2f2f2;
+}
+.light-color {
+    color: #fcf5eb;
+}
+
+/*___________________________________________________*/
+/* Estilos para a barra de navegação (navbar)
+
+/* Ajuste a direção e alinhamento dos itens da barra de navegação */
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Define margem a esquerda para os itens de barra de navegação */
+#navbat .navbar-nav li {
+    margin-left: 1em;
+}
+
+/* Define a cor do texto e links na barra de navegação */
+#navbar a,
+#navbar button {
+    color: #fff;
+}
+
+/* Ajusta a posição dos itens da barra de navegação */
+#navbar li {
+    position: relative;
+}
+
+/* Define estilo para icones na barra de navegação */
+#navbar i {
+    font-size: 20px;
+}
+
+/* Define estilo de cor quando o mouse passa sobre os icones */
+#navbar i:hover {
+    color: #976df2;
+}
+
+/* Define estilo para caixa com numero (ex: quantidade de itens) */
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ef3636;
+    text-align: center;
+}
+
+/* Posiciona a caixa com numero no item de sacola de compras */
+#bag-item span {
+    left: 20px;
+}
+
+/* Estilos para marca/logo na barra de navegação */
+.navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo de hover para links 'sobre' */
+.sobre a:hover {
+    color: #0d0d0d !important; /* importante para sobrepor outros estilos */
+}
+
+/* Ajusta estilo quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+/* Ajusta espaçamento entre itens da barra de navegação */
+#navbar-items {
+    justify-content: space-between;
+}
+
+/* Ajusta espaçamento quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+    #navbar-items {
+        display: flex;
+        min-width: 80%;
+    }
+}
+
+/* Estilos para formulários de busca e newsletter */
+#search-form,
+#news-form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* AJusta largura e margem quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+    #search-form
+    #news-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+/* Estilos para campos de input em formularios */
+#search-form,
+#news-form {
+    border: 2px solid #f2f2f2;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+/* Estilos para campos de input quando focados */
+#search-form input,
+#news-form input {
+    background-color: transparent;
+    border: none;
+    color:  #fff;
+}
+
+/* Estilos para campos de input quando focados */
+#search-form input:focus,
+#news-form input:focus {
+    box-shadow: none;
+}
+
+/* Estilos para placeholders em campos inoput */
+#search-form input::placeholder,
+#news-form input::placeholder {
+    color: #fff;
+}
+
+/*____________________________________________*
+/* Estilos para a barra de navegação inferior (bottom-navbar)
+
+/* Ajusta a posição dos itens na barra de navegação inferior */
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+}
+
+/* Define cor do texto e links na barra de navegação inferior */
+#bottom-navbar-container a {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Define tamanho do icone do botão para mostrar/esconder o menu */
+.navbar-toggler {
+    font-size: 1.5rem;
+}
+
+/*_____________________________________________*/
+/* Estilos para os banners */
+
+/* Define espaçamento interno para o conteiner de banners */
+#banners-container {
+    padding: 0;
+}
+
+/* Posicionamento e espaçamento para a legenda do carousel */
+.carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+}
+
+/* Estilos para o titulo na legenda do carousel */
+.carousel-caption h5 {
+    font-size: 1.8em;
+}
+
+/* Media query para telas com largura minima de 768px */
+@media(min-width: 768px) {
+    /* Ajustar a altura dos itens do carousel e imagens */
+    #slider .carousel-item,
+    #slider img {
+        height: 600px;
+    }
+
+    /* Ajusta posicionamento e espaçamento da legenda do carousel */
+.carousel-caption {
+    left: 23%;
+    right: 23%;
+    }
+
+/* Ajusta tamanho do titulo na legenda do carousel */
+.carousel-caption h5 {
+    font-size: 4em;
+    }
+}
+
+/* Estilos para os mini banners */
+/* Ajusta margem superior para sobrepor os banners principais */
+#mini-banners {
+    margin-top: -3em;
+    z-index: 10;
+}
+
+/* Estilos para as colunas dos mini banners */
+#mini-banners .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Media query para telas com largura minima de 768px */
+@media(min-width: 768px) {
+    /* Ajusta largura maxima das colunas dos mini banners */
+    #mini-banners .col-12 {
+        max-width: 30%;
+    }
+
+    /* Ajusta tamanho do titulo no mini banners */
+    #mini-banners .col-12 h2 {
+        font-size: 2.2em;
+    }
+}
+
+/* Estilos para o titulo nos mini banners */
+#mini-banners .col-12 h2 {
+    text-transform: uppercase;
+    max-width: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+/* Estilos para as imagens nos mini banners */
+#mini-banners .col-12 img {
+    height: 220px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* Estilos para links nos mini banners */
+#mini-banners .col-12 a {
+    font-weight: bold;
+    color: #fff;
+    font-size: .8rem;
+    transition: .5s;
+}
+
+/* Estilos de hover para links nos mini banners */
+#mini-banners .col-12 a:hover {
+    color: #0d0d0d;
+}
+
+/* Estilos especificos para o primeiro mini banner */
+#mini-banners #mini-banner-1 a:hover {
+    color: #976df2;
+}
+
+/* Estilos especificos para o terceiro mini banner */
+#mini-banners #mini-banner-3 a {
+    color: #0d0d0d;
+}
+
+/* Estilos de hover especificos para o terceiro mini banner */
+#mini-banners #mini-banner-3 a:hover {
+    color: #976df2;
+}
